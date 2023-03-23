@@ -1,0 +1,812 @@
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 17: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'blink.obj' failed
+"../blink.c", line 2: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../blink.c".
+Compilation terminated.
+gmake: *** [blink.obj] Error 1
+Building file: "../step_motor.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="step_motor.d_raw"  "../step_motor.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'step_motor.obj' failed
+"..\step_motor.h", line 12: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../step_motor.c".
+Compilation terminated.
+gmake: *** [step_motor.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="C:/Program Files/CSS/msp430_driverlib_2_91_13_01/driverlib/MSP430F5xx_6xx" --include_path="H:/CCS/run/run" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../blink.c", line 27: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building file: "../step_motor.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="C:/Program Files/CSS/msp430_driverlib_2_91_13_01/driverlib/MSP430F5xx_6xx" --include_path="H:/CCS/run/run" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="step_motor.d_raw"  "../step_motor.c"
+"../step_motor.c", line 68: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../step_motor.c", line 75: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+Finished building: "../step_motor.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+ 
+ undefined               first referenced
+  symbol                     in file     
+ ---------               ----------------
+ GPIO_setOutputHighOnPin ./step_motor.obj
+ GPIO_setOutputLowOnPin  ./step_motor.obj
+ 
+error #10234-D: unresolved symbols remain
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+error #10010: errors encountered during linking; "run.out" not built
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+ 
+>> Compilation failure
+makefile:137: recipe for target 'run.out' failed
+gmake[1]: *** [run.out] Error 1
+makefile:133: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../MSP430F5xx_6xx/adc10_a.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/adc10_a.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/adc10_a.c"
+Finished building: "../MSP430F5xx_6xx/adc10_a.c"
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../blink.c", line 27: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building file: "../MSP430F5xx_6xx/aes.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/aes.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/aes.c"
+Finished building: "../MSP430F5xx_6xx/aes.c"
+ 
+Building file: "../step_motor.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="step_motor.d_raw"  "../step_motor.c"
+"../step_motor.c", line 68: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../step_motor.c", line 75: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+Finished building: "../step_motor.c"
+ 
+Building file: "../MSP430F5xx_6xx/battbak.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/battbak.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/battbak.c"
+Finished building: "../MSP430F5xx_6xx/battbak.c"
+ 
+Building file: "../MSP430F5xx_6xx/adc12_a.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/adc12_a.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/adc12_a.c"
+"../MSP430F5xx_6xx/adc12_a.c", line 29: remark #1535-D: (ULP 8.1) variable "retVal" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../MSP430F5xx_6xx/adc12_a.c", line 173: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../MSP430F5xx_6xx/adc12_a.c"
+ 
+Building file: "../MSP430F5xx_6xx/comp_b.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/comp_b.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/comp_b.c"
+"../MSP430F5xx_6xx/comp_b.c", line 23: remark #1535-D: (ULP 8.1) variable "retVal" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../MSP430F5xx_6xx/comp_b.c"
+ 
+Building file: "../MSP430F5xx_6xx/crc.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/crc.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/crc.c"
+Finished building: "../MSP430F5xx_6xx/crc.c"
+ 
+Building file: "../MSP430F5xx_6xx/ctsd16.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/ctsd16.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/ctsd16.c"
+Finished building: "../MSP430F5xx_6xx/ctsd16.c"
+ 
+Building file: "../MSP430F5xx_6xx/dac12_a.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/dac12_a.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/dac12_a.c"
+Finished building: "../MSP430F5xx_6xx/dac12_a.c"
+ 
+Building file: "../MSP430F5xx_6xx/eusci_a_spi.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/eusci_a_spi.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/eusci_a_spi.c"
+Finished building: "../MSP430F5xx_6xx/eusci_a_spi.c"
+ 
+Building file: "../MSP430F5xx_6xx/dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/dma.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/dma.c"
+Finished building: "../MSP430F5xx_6xx/dma.c"
+ 
+Building file: "../MSP430F5xx_6xx/eusci_a_uart.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/eusci_a_uart.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/eusci_a_uart.c"
+Finished building: "../MSP430F5xx_6xx/eusci_a_uart.c"
+ 
+Building file: "../MSP430F5xx_6xx/eusci_b_i2c.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/eusci_b_i2c.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/eusci_b_i2c.c"
+Finished building: "../MSP430F5xx_6xx/eusci_b_i2c.c"
+ 
+Building file: "../MSP430F5xx_6xx/eusci_b_spi.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/eusci_b_spi.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/eusci_b_spi.c"
+Finished building: "../MSP430F5xx_6xx/eusci_b_spi.c"
+ 
+Building file: "../MSP430F5xx_6xx/flashctl.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/flashctl.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/flashctl.c"
+"../MSP430F5xx_6xx/flashctl.c", line 105: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+Finished building: "../MSP430F5xx_6xx/flashctl.c"
+ 
+Building file: "../MSP430F5xx_6xx/gpio.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/gpio.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/gpio.c"
+Finished building: "../MSP430F5xx_6xx/gpio.c"
+ 
+Building file: "../MSP430F5xx_6xx/lcd_b.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/lcd_b.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/lcd_b.c"
+Finished building: "../MSP430F5xx_6xx/lcd_b.c"
+ 
+Building file: "../MSP430F5xx_6xx/lcd_c.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/lcd_c.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/lcd_c.c"
+Finished building: "../MSP430F5xx_6xx/lcd_c.c"
+ 
+Building file: "../MSP430F5xx_6xx/ldopwr.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/ldopwr.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/ldopwr.c"
+Finished building: "../MSP430F5xx_6xx/ldopwr.c"
+ 
+Building file: "../MSP430F5xx_6xx/oa.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/oa.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/oa.c"
+Finished building: "../MSP430F5xx_6xx/oa.c"
+ 
+Building file: "../MSP430F5xx_6xx/mpy32.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/mpy32.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/mpy32.c"
+Finished building: "../MSP430F5xx_6xx/mpy32.c"
+ 
+Building file: "../MSP430F5xx_6xx/pmap.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/pmap.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/pmap.c"
+"../MSP430F5xx_6xx/pmap.c", line 38: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../MSP430F5xx_6xx/pmap.c", line 38: remark #1543-D: (ULP 12.2) Detected for loop with repetitive data transfer. Recommend using DMA
+Finished building: "../MSP430F5xx_6xx/pmap.c"
+ 
+Building file: "../MSP430F5xx_6xx/pmm.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/pmm.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/pmm.c"
+"../MSP430F5xx_6xx/pmm.c", line 275: remark #1528-D: (ULP 3.1) Detected flag polling using SVSMHDLYIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/pmm.c", line 288: remark #1528-D: (ULP 3.1) Detected flag polling using SVSMHDLYIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/pmm.c", line 310: remark #1528-D: (ULP 3.1) Detected flag polling using SVSMHDLYIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/pmm.c", line 323: remark #1528-D: (ULP 3.1) Detected flag polling using SVSMLDLYIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/pmm.c", line 358: remark #1528-D: (ULP 3.1) Detected flag polling using SVSMHDLYIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/pmm.c", line 409: remark #1528-D: (ULP 3.1) Detected flag polling using SVSMLDLYIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/pmm.c", line 446: remark #1528-D: (ULP 3.1) Detected flag polling using SVSMHDLYIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../MSP430F5xx_6xx/pmm.c"
+ 
+Building file: "../MSP430F5xx_6xx/ram.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/ram.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/ram.c"
+Finished building: "../MSP430F5xx_6xx/ram.c"
+ 
+Building file: "../MSP430F5xx_6xx/ref.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/ref.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/ref.c"
+Finished building: "../MSP430F5xx_6xx/ref.c"
+ 
+Building file: "../MSP430F5xx_6xx/rtc_b.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/rtc_b.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/rtc_b.c"
+Finished building: "../MSP430F5xx_6xx/rtc_b.c"
+ 
+Building file: "../MSP430F5xx_6xx/rtc_c.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/rtc_c.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/rtc_c.c"
+Finished building: "../MSP430F5xx_6xx/rtc_c.c"
+ 
+Building file: "../MSP430F5xx_6xx/rtc_a.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/rtc_a.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/rtc_a.c"
+"../MSP430F5xx_6xx/rtc_a.c", line 78: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../MSP430F5xx_6xx/rtc_a.c", line 81: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../MSP430F5xx_6xx/rtc_a.c", line 82: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../MSP430F5xx_6xx/rtc_a.c", line 83: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../MSP430F5xx_6xx/rtc_a.c", line 84: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../MSP430F5xx_6xx/rtc_a.c", line 85: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../MSP430F5xx_6xx/rtc_a.c", line 86: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+Finished building: "../MSP430F5xx_6xx/rtc_a.c"
+ 
+Building file: "../MSP430F5xx_6xx/sd24_b.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/sd24_b.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/sd24_b.c"
+Finished building: "../MSP430F5xx_6xx/sd24_b.c"
+ 
+Building file: "../MSP430F5xx_6xx/sfr.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/sfr.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/sfr.c"
+Finished building: "../MSP430F5xx_6xx/sfr.c"
+ 
+Building file: "../MSP430F5xx_6xx/sysctl.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/sysctl.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/sysctl.c"
+Finished building: "../MSP430F5xx_6xx/sysctl.c"
+ 
+Building file: "../MSP430F5xx_6xx/tec.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/tec.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/tec.c"
+Finished building: "../MSP430F5xx_6xx/tec.c"
+ 
+Building file: "../MSP430F5xx_6xx/timer_d.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/timer_d.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/timer_d.c"
+Finished building: "../MSP430F5xx_6xx/timer_d.c"
+ 
+Building file: "../MSP430F5xx_6xx/timer_a.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/timer_a.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/timer_a.c"
+Finished building: "../MSP430F5xx_6xx/timer_a.c"
+ 
+Building file: "../MSP430F5xx_6xx/timer_b.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/timer_b.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/timer_b.c"
+Finished building: "../MSP430F5xx_6xx/timer_b.c"
+ 
+Building file: "../MSP430F5xx_6xx/tlv.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/tlv.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/tlv.c"
+Finished building: "../MSP430F5xx_6xx/tlv.c"
+ 
+Building file: "../MSP430F5xx_6xx/usci_a_spi.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/usci_a_spi.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/usci_a_spi.c"
+"../MSP430F5xx_6xx/usci_a_spi.c", line 37: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MSP430F5xx_6xx/usci_a_spi.c", line 67: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../MSP430F5xx_6xx/usci_a_spi.c"
+ 
+Building file: "../MSP430F5xx_6xx/usci_a_uart.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/usci_a_uart.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/usci_a_uart.c"
+"../MSP430F5xx_6xx/usci_a_uart.c", line 23: remark #1535-D: (ULP 8.1) variable "retVal" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../MSP430F5xx_6xx/usci_a_uart.c", line 88: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_a_uart.c", line 99: remark #1528-D: (ULP 3.1) Detected flag polling using UCRXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_a_uart.c", line 204: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../MSP430F5xx_6xx/usci_a_uart.c"
+ 
+Building file: "../MSP430F5xx_6xx/ucs.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/ucs.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/ucs.c"
+"../MSP430F5xx_6xx/ucs.c", line 140: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MSP430F5xx_6xx/ucs.c", line 146: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../MSP430F5xx_6xx/ucs.c", line 163: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../MSP430F5xx_6xx/ucs.c", line 169: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MSP430F5xx_6xx/ucs.c", line 198: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MSP430F5xx_6xx/ucs.c", line 202: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MSP430F5xx_6xx/ucs.c", line 206: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MSP430F5xx_6xx/ucs.c", line 223: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../MSP430F5xx_6xx/ucs.c"
+ 
+Building file: "../MSP430F5xx_6xx/usci_b_spi.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/usci_b_spi.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/usci_b_spi.c"
+"../MSP430F5xx_6xx/usci_b_spi.c", line 37: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MSP430F5xx_6xx/usci_b_spi.c", line 65: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../MSP430F5xx_6xx/usci_b_spi.c"
+ 
+Building file: "../MSP430F5xx_6xx/wdt_a.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/wdt_a.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/wdt_a.c"
+Finished building: "../MSP430F5xx_6xx/wdt_a.c"
+ 
+Building file: "../MSP430F5xx_6xx/usci_b_i2c.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430F5xx_6xx/usci_b_i2c.d_raw" --obj_directory="MSP430F5xx_6xx"  "../MSP430F5xx_6xx/usci_b_i2c.c"
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 45: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 186: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 192: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 222: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 233: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 266: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 290: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 313: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 328: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 349: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 356: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 372: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 384: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 402: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 415: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 457: remark #1528-D: (ULP 3.1) Detected flag polling using UCRXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 454: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 485: remark #1528-D: (ULP 3.1) Detected flag polling using UCRXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 477: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 519: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 548: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../MSP430F5xx_6xx/usci_b_i2c.c", line 568: remark #1528-D: (ULP 3.1) Detected flag polling using UCRXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../MSP430F5xx_6xx/usci_b_i2c.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../blink.c", line 27: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 27: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'blink.obj' failed
+"../blink.c", line 25: error #20: identifier "s" is undefined
+"../blink.c", line 25: error #66: expected a ";"
+"../blink.c", line 26: error #20: identifier "i" is undefined
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+3 errors detected in the compilation of "../blink.c".
+gmake: *** [blink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'blink.obj' failed
+"../blink.c", line 25: error #20: identifier "s" is undefined
+"../blink.c", line 25: error #66: expected a ";"
+"../blink.c", line 26: error #20: identifier "i" is undefined
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+3 errors detected in the compilation of "../blink.c".
+gmake: *** [blink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'blink.obj' failed
+"../blink.c", line 25: error #20: identifier "s" is undefined
+"../blink.c", line 25: error #66: expected a ";"
+"../blink.c", line 26: error #20: identifier "i" is undefined
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+3 errors detected in the compilation of "../blink.c".
+gmake: *** [blink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../blink.c", line 44: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../blink.c", line 46: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../blink.c", line 65: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../blink.c", line 68: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../blink.c", line 36: warning #179-D: variable "i" was declared but never referenced
+"../blink.c", line 44: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../blink.c", line 46: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 37: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../blink.c", line 39: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 40: warning #225-D: function "STEP_MOTOR_LOOP" declared implicitly
+"../blink.c", line 37: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../blink.c", line 39: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../blink.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1220/ccs/ccs_base/msp430/include" --include_path="H:/CCS/run/run" --include_path="H:/CCS/run/run/MSP430F5xx_6xx" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blink.d_raw"  "../blink.c"
+"../blink.c", line 37: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../blink.c", line 39: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+Finished building: "../blink.c"
+ 
+Building target: "run.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"run.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1220/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1220/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="run_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "run.out" "./blink.obj" "./step_motor.obj" "./MSP430F5xx_6xx/adc10_a.obj" "./MSP430F5xx_6xx/adc12_a.obj" "./MSP430F5xx_6xx/aes.obj" "./MSP430F5xx_6xx/battbak.obj" "./MSP430F5xx_6xx/comp_b.obj" "./MSP430F5xx_6xx/crc.obj" "./MSP430F5xx_6xx/ctsd16.obj" "./MSP430F5xx_6xx/dac12_a.obj" "./MSP430F5xx_6xx/dma.obj" "./MSP430F5xx_6xx/eusci_a_spi.obj" "./MSP430F5xx_6xx/eusci_a_uart.obj" "./MSP430F5xx_6xx/eusci_b_i2c.obj" "./MSP430F5xx_6xx/eusci_b_spi.obj" "./MSP430F5xx_6xx/flashctl.obj" "./MSP430F5xx_6xx/gpio.obj" "./MSP430F5xx_6xx/lcd_b.obj" "./MSP430F5xx_6xx/lcd_c.obj" "./MSP430F5xx_6xx/ldopwr.obj" "./MSP430F5xx_6xx/mpy32.obj" "./MSP430F5xx_6xx/oa.obj" "./MSP430F5xx_6xx/pmap.obj" "./MSP430F5xx_6xx/pmm.obj" "./MSP430F5xx_6xx/ram.obj" "./MSP430F5xx_6xx/ref.obj" "./MSP430F5xx_6xx/rtc_a.obj" "./MSP430F5xx_6xx/rtc_b.obj" "./MSP430F5xx_6xx/rtc_c.obj" "./MSP430F5xx_6xx/sd24_b.obj" "./MSP430F5xx_6xx/sfr.obj" "./MSP430F5xx_6xx/sysctl.obj" "./MSP430F5xx_6xx/tec.obj" "./MSP430F5xx_6xx/timer_a.obj" "./MSP430F5xx_6xx/timer_b.obj" "./MSP430F5xx_6xx/timer_d.obj" "./MSP430F5xx_6xx/tlv.obj" "./MSP430F5xx_6xx/ucs.obj" "./MSP430F5xx_6xx/usci_a_spi.obj" "./MSP430F5xx_6xx/usci_a_uart.obj" "./MSP430F5xx_6xx/usci_b_i2c.obj" "./MSP430F5xx_6xx/usci_b_spi.obj" "./MSP430F5xx_6xx/wdt_a.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "run.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project run ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'run.out' is up to date.
+
+**** Build Finished ****

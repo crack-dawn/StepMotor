@@ -1,0 +1,67 @@
+#include <msp430.h>
+#include "driverlib.h"
+#include "step_motor.h"
+
+
+void SYS_Initialize()
+{
+    WDTCTL = WDTPW | WDTHOLD;       // stop watchdog timer
+//
+}
+
+
+
+void GPIO_Configure()
+{
+    P1DIR |= 0x3E;  // 输出模式  8b' 0011_1110
+
+    P1SEL |= 0xC1;  // 使能为IO模式
+
+    P1OUT &= 0x00;  // 初始化电平拉低
+}
+
+void delay_(unsigned char n)
+{
+    volatile unsigned int i;        // volatile to prevent optimization
+    for( ; n>0 ; n--){
+        for(i=10000; i>0; i--);     // delay
+    }
+    return ;
+}
+
+/**
+ * blink.c
+ */
+void main(void)
+{
+
+
+    SYS_Initialize();
+    GPIO_Configure();
+
+
+    while(1)
+    {
+        P1OUT ^= 0x3E;              // toggle P1.0
+        delay_(2);
+        STEP_MOTOR_LOOP(1, 2, 10);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
