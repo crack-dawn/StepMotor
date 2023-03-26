@@ -1,7 +1,7 @@
 /*
  * step_motor.h
  *
- *  Created on: 2023Äê3ÔÂ23ÈÕ
+ *  Created on: 2023å¹´3æœˆ23æ—¥
  *      Author: 23841
  */
 
@@ -16,52 +16,49 @@ typedef unsigned char u8;
 typedef unsigned int u16;
 #endif
 
- 
+#define Delay_f(x) delay_ms(x)
 
-#define Delay_f(x)  delay_ms(x)
+#define SM_STOP (STEP_MOTOR_OFF())
+extern u8 STEP; //å®šä¹‰å•æ­¥è®¡æ•° å…¨å±€å˜é‡
 
-#define SM_STOP         (STEP_MOTOR_OFF)
-extern u8 STEP; //¶¨Òåµ¥²½¼ÆÊı È«¾Ö±äÁ¿
-
-struct STEP_MOTOR_S{
-    u8 step;            //Ò»ÖÜÆÚÄÚ²½Êı  ÏàÊı
-    u8 dir;             //Ğı×ª·½Ïò
-    u8 status;    //ÔË¶¯ or Í£Ö¹
-    u8 speed;       //  Âö³å¼ä¸ô ×ª¶¯ËÙ¶È
-    u8 StepAngle; //²½½ø½Ç
-    u8 SpeedDownRadio; //¼õËÙ±È  È¡ÕûÊı
-    u8 NumOfPhase;       //ÏàÎ»Êı
+struct STEP_MOTOR_S
+{
+    u8 step; //ä¸€å‘¨æœŸå†…æ­¥æ•°  ç›¸æ•°
+    u8 totalsteps;
+    u8 StepAngle;      //æ­¥è¿›è§’
+    u8 dir;            //æ—‹è½¬æ–¹å‘
+    u8 status;         //è¿åŠ¨ or åœæ­¢
+    u8 speed;          //  è„‰å†²é—´éš” è½¬åŠ¨é€Ÿåº¦
+    u8 SpeedDownRadio; //å‡é€Ÿæ¯”  å–æ•´æ•°
+    u8 NumOfPhase;     //ç›¸ä½æ•°
 };
 
-extern  struct  STEP_MOTOR_S StepMotorInfo;
+extern struct STEP_MOTOR_S StepMotorInfo;
 
-#define STEP_MOTOR_PORT         GPIO_PORT_P1 //¶¨ÒåIO½Ó¿ÚËùÔÚ×é
-#define STEP_MOTOR_A1           GPIO_PIN2 //¶¨ÒåIO½Ó¿Ú
-#define STEP_MOTOR_A2           GPIO_PIN3 //¶¨ÒåIO½Ó¿Ú
-#define STEP_MOTOR_B1           GPIO_PIN4 //¶¨ÒåIO½Ó¿Ú
-#define STEP_MOTOR_B2           GPIO_PIN5 //¶¨ÒåIO½Ó¿Ú
- 
+#define STEP_MOTOR_PORT GPIO_PORT_P1 //å®šä¹‰IOæ¥å£æ‰€åœ¨ç»„
+#define STEP_MOTOR_A1 GPIO_PIN2      //å®šä¹‰IOæ¥å£
+#define STEP_MOTOR_A2 GPIO_PIN3      //å®šä¹‰IOæ¥å£
+#define STEP_MOTOR_B1 GPIO_PIN4      //å®šä¹‰IOæ¥å£
+#define STEP_MOTOR_B2 GPIO_PIN5      //å®šä¹‰IOæ¥å£
 
-#define A1_ON   GPIO_setOutputHighOnPin(STEP_MOTOR_PORT, STEP_MOTOR_A1)
-#define A1_OFF  GPIO_setOutputLowOnPin(STEP_MOTOR_PORT, STEP_MOTOR_A1)
+#define A1_ON GPIO_setOutputHighOnPin(STEP_MOTOR_PORT, STEP_MOTOR_A1)
+#define A1_OFF GPIO_setOutputLowOnPin(STEP_MOTOR_PORT, STEP_MOTOR_A1)
 
-#define A2_ON   GPIO_setOutputHighOnPin(STEP_MOTOR_PORT, STEP_MOTOR_A2)
-#define A2_OFF  GPIO_setOutputLowOnPin(STEP_MOTOR_PORT, STEP_MOTOR_A2)
+#define A2_ON GPIO_setOutputHighOnPin(STEP_MOTOR_PORT, STEP_MOTOR_A2)
+#define A2_OFF GPIO_setOutputLowOnPin(STEP_MOTOR_PORT, STEP_MOTOR_A2)
 
-#define B1_ON   GPIO_setOutputHighOnPin(STEP_MOTOR_PORT, STEP_MOTOR_B1)
-#define B1_OFF  GPIO_setOutputLowOnPin(STEP_MOTOR_PORT, STEP_MOTOR_B1)
+#define B1_ON GPIO_setOutputHighOnPin(STEP_MOTOR_PORT, STEP_MOTOR_B1)
+#define B1_OFF GPIO_setOutputLowOnPin(STEP_MOTOR_PORT, STEP_MOTOR_B1)
 
-#define B2_ON   GPIO_setOutputHighOnPin(STEP_MOTOR_PORT, STEP_MOTOR_B2)
-#define B2_OFF  GPIO_setOutputLowOnPin(STEP_MOTOR_PORT, STEP_MOTOR_B2)
-
- 
+#define B2_ON GPIO_setOutputHighOnPin(STEP_MOTOR_PORT, STEP_MOTOR_B2)
+#define B2_OFF GPIO_setOutputLowOnPin(STEP_MOTOR_PORT, STEP_MOTOR_B2)
 
 // #define STEP_MOTOR_CLK  RCC_APB2Periph_GPIOA
 
-void STEP_MOTOR_Init(void); //³õÊ¼»¯
-void STEP_MOTOR_OFF(void);  //¶Ïµç×´Ì¬
+void STEP_MOTOR_Init(void); //åˆå§‹åŒ–
+void STEP_MOTOR_OFF(void);  //æ–­ç”µçŠ¶æ€
 void STEP_MOTOR_8A(u8 a, u16 speed);
-void STEP_MOTOR_NUM(u8 RL, u16 num, u8 speed);  //µç»ú°´²½ÊıÔËĞĞ
-void STEP_MOTOR_LOOP(u8 RL, u8 LOOP, u8 speed); //µç»ú°´È¦ÊıÔËĞĞ
+void STEP_MOTOR_NUM(u8 RL, u16 num, u8 speed);  //ç”µæœºæŒ‰æ­¥æ•°è¿è¡Œ
+void STEP_MOTOR_LOOP(u8 RL, u8 LOOP, u8 speed); //ç”µæœºæŒ‰åœˆæ•°è¿è¡Œ
 
 #endif

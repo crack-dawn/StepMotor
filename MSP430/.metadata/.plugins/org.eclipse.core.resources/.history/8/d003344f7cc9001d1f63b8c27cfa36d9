@@ -40,8 +40,6 @@ void main(void)
        STEP_MOTOR_LOOP(1, 2, 10);
    }
 }
-
-
 //
 //void main()
 //{
