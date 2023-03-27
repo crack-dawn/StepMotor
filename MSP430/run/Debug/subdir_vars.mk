@@ -9,26 +9,38 @@ CMD_SRCS += \
 ../lnk_msp430f5529.cmd 
 
 C_SRCS += \
+../TIM_A.c \
+../TIM_B.c \
 ../blink.c \
 ../step_motor.c 
 
 C_DEPS += \
+./TIM_A.d \
+./TIM_B.d \
 ./blink.d \
 ./step_motor.d 
 
 OBJS += \
+./TIM_A.obj \
+./TIM_B.obj \
 ./blink.obj \
 ./step_motor.obj 
 
 OBJS__QUOTED += \
+"TIM_A.obj" \
+"TIM_B.obj" \
 "blink.obj" \
 "step_motor.obj" 
 
 C_DEPS__QUOTED += \
+"TIM_A.d" \
+"TIM_B.d" \
 "blink.d" \
 "step_motor.d" 
 
 C_SRCS__QUOTED += \
+"../TIM_A.c" \
+"../TIM_B.c" \
 "../blink.c" \
 "../step_motor.c" 
 

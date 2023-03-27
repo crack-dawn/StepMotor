@@ -1,0 +1,9 @@
+/*
+ * TIM_A.c
+ *
+ *  Created on: 2023骞�3鏈�26鏃�
+ *      Author: 23841
+ */
+
+#include <msp430.h>
+#include "driverlib.h"

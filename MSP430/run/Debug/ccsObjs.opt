@@ -1,3 +1,5 @@
+"./TIM_A.obj"
+"./TIM_B.obj"
 "./blink.obj"
 "./step_motor.obj"
 "./MSP430F5xx_6xx/adc10_a.obj"

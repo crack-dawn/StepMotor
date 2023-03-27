@@ -1,23 +1,22 @@
 #include <msp430.h>
 #include "driverlib.h"
 #include "step_motor.h"
-
+#include "TIM_A.h"
 
 void SYS_Initialize()
 {
     WDTCTL = WDTPW | WDTHOLD;       // stop watchdog timer
-//
+    __enable_interrupt(   ); //å¼€å¯å…¨å±€æ€»ä¸­æ–­ å…è®¸
+
 }
-
-
 
 void GPIO_Configure()
 {
-    P1DIR |= 0x3E;  // Êä³öÄ£Ê½  8b' 0011_1110
+    P1DIR |= 0x3E;  // è¾“å‡ºæ¨¡å¼  8b' 0011_1110
 
-    P1SEL |= 0xC1;  // Ê¹ÄÜÎªIOÄ£Ê½
+    P1SEL |= 0xC1;  // ä½¿èƒ½ä¸ºIOæ¨¡å¼
 
-    P1OUT &= 0x00;  // ³õÊ¼»¯µçÆ½À­µÍ
+    P1OUT &= 0x00;  // åˆå§‹åŒ–ç”µå¹³æ‹‰ä½
 }
 
 
@@ -26,48 +25,22 @@ void GPIO_Configure()
  */
 void main(void)
 {
-
    SYS_Initialize();
    GPIO_Configure();
+   //TIM_A_init();
 
+   StepMotorInfo.step=0;
+//   for(StepMotorInfo.step = 0 ; StepMotorInfo.step < 8 ; StepMotorInfo.step++)
+//   {
+//       STEP_MOTOR_8A_RUN(StepMotorInfo.step, 10);
+//       delay_ms(100);
+//   }
 
-   while(1)
+    while (1)
    {
-       P1OUT ^= 0x3E;              // toggle P1.0
-       delay_ms(1000);
-       P1OUT ^= 0x3E;
-       delay_ms(1000);
-       STEP_MOTOR_LOOP(1, 2, 10);
+    STEP_MOTOR_NUM(1,3000,10);
    }
 }
-
-
-//
-//void main()
-//{
-//    //Stop WDT
-//    WDT_A_hold(WDT_A_BASE);
-//    //P1.0ÎªÊä³ö
-//    GPIO_setAsOutputPin(GPIO_PORT_P1,GPIO_PIN0);
-//    //P4.7ÎªÊä³ö
-//    GPIO_setAsOutputPin(GPIO_PORT_P4,GPIO_PIN7);
-//    while(1)
-//    {
-//        //·´×ªP1.0µçÆ½
-//        GPIO_toggleOutputOnPin(GPIO_PORT_P4,GPIO_PIN7);
-//        //P1.0Êä³ö¸ßµçÆ½
-//        GPIO_setOutputHighOnPin(GPIO_PORT_P1,GPIO_PIN0);
-//        delay_ms(1000);
-//        //P1.0Êä³öµÍµçÆ½
-//        GPIO_setOutputLowOnPin(GPIO_PORT_P1,GPIO_PIN0);
-//        delay_ms(1000);
-//    }
-//}
-//
-//
-//
-//
-//
 
 
 

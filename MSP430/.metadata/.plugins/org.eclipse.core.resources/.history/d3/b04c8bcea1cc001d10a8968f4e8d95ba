@@ -1,0 +1,31 @@
+/*
+ * TIM_B.H
+ *
+ *  Created on: 2023年3月27日
+ *      Author: 23841
+ */
+
+#ifndef TIM_B_H
+#define TIM_B_H
+
+
+#include <msp430.h>
+#include "driverlib.h"
+#include "step_motor.h"
+
+void TIM_B_init();
+
+void TIM_B_init(void)
+{
+    // TASSEL_1 ACLK（32768Hz）以及TASSEL_2 SMCLK（1.045MHz）
+    TB1CTL = TASSEL__SMCLK | ID_0 | MC_1 | TAIE | TBCLR;
+
+    TA1CCR0 = CIRCLE; //计数周期
+    TA1CCTL0 = CCIE; //使能中断 中断允许
+    TA1CTL &= ~TAIFG; // 清除定时器1中断标志位
+    TA1R = 0;
+}
+
+
+
+#endif /* TIM_B_H_ */

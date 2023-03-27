@@ -1,0 +1,86 @@
+#include <msp430.h>
+#include "driverlib.h"
+#include "step_motor.h"
+#include "TIM_A.h"
+
+void SYS_Initialize()
+{
+    WDTCTL = WDTPW | WDTHOLD;       // stop watchdog timer
+    __bis_SR_register(LPM0_bits | GIE);  // 进入低功耗模式并开启中断
+
+}
+
+void GPIO_Configure()
+{
+    P1DIR |= 0x3E;  // 输出模式  8b' 0011_1110
+
+    P1SEL |= 0xC1;  // 使能为IO模式
+
+    P1OUT &= 0x00;  // 初始化电平拉低
+}
+
+
+/**
+ * blink.c
+ */
+void main(void)
+{
+
+   SYS_Initialize();
+   GPIO_Configure();
+   TIM_A_init();
+   P1OUT ^= 0x3E;
+   delay_ms(1000);
+   P1OUT ^= 0x3E;
+   delay_ms(1000);
+   P1OUT ^= 0x3E;
+   while(1)
+   {
+       delay_ms(1000);
+       P1OUT ^= 0x3E;
+       delay_ms(1000);
+       P1OUT ^= 0x3E;
+//       STEP_MOTOR_LOOP(1, 2, 10);
+   }
+}
+
+
+//
+//void main()
+//{
+//    //Stop WDT
+//    WDT_A_hold(WDT_A_BASE);
+//    //P1.0为输出
+//    GPIO_setAsOutputPin(GPIO_PORT_P1,GPIO_PIN0);
+//    //P4.7为输出
+//    GPIO_setAsOutputPin(GPIO_PORT_P4,GPIO_PIN7);
+//    while(1)
+//    {
+//        //反转P1.0电平
+//        GPIO_toggleOutputOnPin(GPIO_PORT_P4,GPIO_PIN7);
+//        //P1.0输出高电平
+//        GPIO_setOutputHighOnPin(GPIO_PORT_P1,GPIO_PIN0);
+//        delay_ms(1000);
+//        //P1.0输出低电平
+//        GPIO_setOutputLowOnPin(GPIO_PORT_P1,GPIO_PIN0);
+//        delay_ms(1000);
+//    }
+//}
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+

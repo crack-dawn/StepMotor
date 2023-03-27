@@ -1,0 +1,53 @@
+/*
+ * TIM_A.c
+ *
+ *  Created on: 2023骞�3鏈�26鏃�
+ *      Author: 23841
+ */
+
+#include "TIM_A.h"
+#define CIRCLE (unsigned int)1045
+
+
+void TIM_A_init(void)
+{
+
+    TA1CTL= TASSEL__SMCLK | ID_0 |MC_1 | TACLR  | TAIE ;
+
+    TA1CCR0 = CIRCLE; //计数周期
+    TA1CCTL0 = CCIE; //使能中断
+
+//    TA1CTL =        \
+//                +TASSEL__SMCLK  \ //其中常用的是TASSEL_1 ACLK（32768Hz）以及TASSEL_2 SMCLK（1.045MHz）；
+//                + ID_0 \          //不分频
+//                + MC_1 \          // 向上计数模式
+//                + TACLR \         //清除计数器
+//                + TAIE   \        //开启中断函数
+//                + TAIFG;          //中断标志位清理
+
+    TA1R = 0;
+}
+
+
+
+
+
+
+#pragma vector = TIMER1_A0_VECTOR  //计数器0 基础计数器的中断向量
+__interrupt void TIMER_A0(void)
+{
+    static unsigned int cnt=0;
+    __enable_interrupt(); //在中断中开启总中断，代表允许中断嵌套
+
+    cnt++;
+    if(cnt == 1000-1)
+    {
+        cnt = 0;
+        P1OUT ^= 0x3E;
+    }
+
+    TA1CTL &= ~TAIFG; // 清除定时器1中断标志位
+    TA1CCTL0 |= CCIE; // 使能计数器0的中断
+}
+
+

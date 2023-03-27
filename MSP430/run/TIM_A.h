@@ -1,8 +1,19 @@
 /*
  * TIM_A.c
  *
- *  Created on: 2023年3月26日
+ *  Created on: 2023骞�3鏈�26鏃�
  *      Author: 23841
  */
+#ifndef TIM_A_H
+#define TIM_A_H
 
-#include "TIM_A.h"
+
+#include <msp430.h>
+#include "driverlib.h"
+#include "step_motor.h"
+
+
+void TIM_A_init();
+
+
+#endif

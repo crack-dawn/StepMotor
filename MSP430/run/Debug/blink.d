@@ -62,6 +62,8 @@ blink.obj: H:/CCS/run/run/MSP430F5xx_6xx/flashctl.h
 blink.obj: H:/CCS/run/run/MSP430F5xx_6xx/crc.h
 blink.obj: ../step_motor.h
 blink.obj: H:/CCS/run/run/MSP430F5xx_6xx/driverlib.h
+blink.obj: ../TIM_A.h
+blink.obj: H:/CCS/run/run/MSP430F5xx_6xx/driverlib.h
 
 ../blink.c:
 
@@ -184,6 +186,10 @@ H:/CCS/run/run/MSP430F5xx_6xx/flashctl.h:
 H:/CCS/run/run/MSP430F5xx_6xx/crc.h:
 
 ../step_motor.h:
+
+H:/CCS/run/run/MSP430F5xx_6xx/driverlib.h:
+
+../TIM_A.h:
 
 H:/CCS/run/run/MSP430F5xx_6xx/driverlib.h:
 

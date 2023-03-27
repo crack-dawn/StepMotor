@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "ucs.h": "c",
+        "tim_a.h": "c",
+        "driverlib.h": "c"
+    }
+}
