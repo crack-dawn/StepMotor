@@ -2,7 +2,7 @@
 #define __STEP_MOTOR_H
 
 #include "REG52.H"
- 
+#include "Delay.h" 
 
 extern unsigned char STEP; //定义单步计数 全局变量
 

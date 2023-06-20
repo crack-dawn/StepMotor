@@ -11,15 +11,17 @@ struct MOTOR_  {
     unsigned char Speed;
 } ;
 
+
+
 struct MOTOR_ Motor = {0, 0, 2, 0};
+
 
 unsigned char STEP;
 
-void Delay(){}
-
+ 
 void STEP_MOTOR_Init(void)
 { //接口初始化
-
+    
      
 }
 
@@ -102,7 +104,7 @@ void STEP_MOTOR_8A( unsigned char step,  unsigned int speed) //电机单步8拍
         default:
             break;
     }
-    Delay();             //延时
+    Delay(speed);             //延时
     STEP_MOTOR_OFF(); //进入断电状态，防电机过热
 }
 

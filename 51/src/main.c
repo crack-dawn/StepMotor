@@ -9,6 +9,7 @@
 */
 
 #include "REG52.H"
+#include "step_motor.h"
 
 typedef unsigned char uint8_t;
 typedef unsigned int uint16_t;
@@ -44,8 +45,12 @@ void main()
     // launch T0
     TR0 = 1;
 
+    
+    STEP_MOTOR_Init();
     while (1)
     {
+    STEP_MOTOR_LOOP(1,3,10);
+    STEP_MOTOR_LOOP(0,3,10);
         // TODO
     }
 }
